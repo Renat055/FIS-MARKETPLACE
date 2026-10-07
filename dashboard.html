@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Gestiona tus productos publicados y revisa tus estadísticas de ventas en el panel de vendedor de EPN FIS.">
+<meta name="theme-color" content="#0B0F1A">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EPN FIS">
+<meta property="og:title" content="Panel de vendedor — EPN FIS">
+<meta property="og:description" content="Gestiona tus productos publicados y revisa tus estadísticas de ventas en el panel de vendedor de EPN FIS.">
+<meta property="og:image" content="assets/icons/og-image.png">
+<meta property="og:locale" content="es_EC">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Panel de vendedor — EPN FIS">
+<meta name="twitter:description" content="Gestiona tus productos publicados y revisa tus estadísticas de ventas en el panel de vendedor de EPN FIS.">
+<meta name="twitter:image" content="assets/icons/og-image.png">
+<link rel="icon" href="assets/icons/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192.png">
+<link rel="apple-touch-icon" href="assets/icons/icon-180.png">
+<link rel="manifest" href="manifest.json">
+<title>Panel de vendedor — EPN FIS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script>(function(){try{if(localStorage.getItem("epnfis_theme")==="dark")document.documentElement.setAttribute("data-theme","dark");}catch(e){}})();</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Saltar al contenido principal</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo"><span class="logo-mark">FS</span>EPN<span class="logo-sep">·</span>FIS</a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Explorar</a></li>
+        <li><a href="categorias.html">Categorías</a></li>
+        <li><a href="vender.html">Vender</a></li>
+        <li><a href="biblioteca.html">Mi biblioteca</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions" style="margin-left:auto;">
+            <button class="icon-btn" type="button" data-open-search aria-label="Buscar (Ctrl+K)">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="Cambiar tema">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <span data-user-slot></span>
+    </div>
+    <button class="menu-toggle" aria-label="Abrir menú" type="button"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="mobile-nav" aria-label="Navegación móvil">
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Explorar</a>
+    <a href="categorias.html">Categorías</a>
+    <a href="vender.html">Vender</a>
+    <a href="biblioteca.html">Mi biblioteca</a>
+  </nav>
+</header>
+
+<main class="container" style="padding-top:24px;padding-bottom:56px;" id="main">
+
+  <div id="guardWrap" class="hidden">
+    <div class="empty-state">
+      <h3>Inicia sesión para ver tu panel</h3>
+      <p>El panel de vendedor muestra tus productos publicados y tus estadísticas de ventas.</p>
+      <a href="login.html" class="btn btn-primary">Iniciar sesión</a>
+    </div>
+  </div>
+
+  <div id="dashWrap">
+    <div class="page-head" style="padding:0 0 20px;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:12px;">
+      <div>
+        <h1>Panel de vendedor</h1>
+        <p>Gestiona tus proyectos y revisa cómo les está yendo.</p>
+      </div>
+      <a href="vender.html" class="btn btn-primary">Publicar nuevo proyecto</a>
+    </div>
+
+    <div class="dash-layout">
+      <nav class="dash-side" aria-label="Secciones del panel">
+        <a href="#" class="active" data-dash-tab="overview">Resumen</a>
+        <a href="#" data-dash-tab="products">Mis productos</a>
+      </nav>
+
+      <div>
+        <div class="dash-panel" id="panel-overview">
+          <div class="stat-grid">
+            <div class="stat-card"><span>Productos publicados</span><b id="statProducts">0</b></div>
+            <div class="stat-card"><span>Ventas totales</span><b id="statSales">0</b></div>
+            <div class="stat-card"><span>Ingresos estimados</span><b id="statRevenue">$0</b></div>
+            <div class="stat-card"><span>Calificación promedio</span><b id="statRating">0.0</b></div>
+          </div>
+
+          <div style="background:#fff;border:1px solid var(--line);border-radius:var(--radius-m);padding:20px;">
+            <h3 style="font-size:.95rem;margin-bottom:4px;">Ventas por producto</h3>
+            <p style="font-size:.8rem;margin-bottom:8px;">Descargas simuladas acumuladas por proyecto.</p>
+            <div class="bars-chart" id="barsChart"></div>
+          </div>
+        </div>
+
+        <div class="dash-panel hidden" id="panel-products">
+          <div style="overflow-x:auto;">
+            <table class="data-table">
+              <thead>
+                <tr><th>Producto</th><th>Categoría</th><th>Precio</th><th>Ventas</th><th>Estado</th><th></th></tr>
+              </thead>
+              <tbody id="productsTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer" style="margin-top:0;">
+  <div class="container">
+    <div class="footer-bottom">
+      <span>© 2026 EPN FIS. Proyecto académico con fines de aprendizaje.</span>
+      <span>Escuela Politécnica Nacional · Facultad de Ingeniería de Sistemas</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/productos.js"></script>
+<script src="js/dashboard.js"></script>
+<script src="js/asistente.js"></script>
+<script src="js/buscador.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400">
+  <defs>
+    <linearGradient id="basep5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1B2540"/>
+      <stop offset="100%" stop-color="#0B0F1A"/>
+    </linearGradient>
+    <radialGradient id="glowp5" cx="50%" cy="46%" r="60%">
+      <stop offset="0%" stop-color="#F2668C" stop-opacity="0.5"/>
+      <stop offset="55%" stop-color="#F2668C" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#F2668C" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="platp5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F2668C" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#F2668C" stop-opacity="0.05"/>
+    </linearGradient>
+    <pattern id="hexp5" width="46" height="80" patternUnits="userSpaceOnUse">
+      <path d="M23 0 L46 13 L46 40 L23 53 L0 40 L0 13 Z" fill="none" stroke="#F2668C" stroke-opacity="0.15" stroke-width="1"/>
+      <path d="M23 53 L46 66 L46 93 L23 106 L0 93 L0 66 Z" fill="none" stroke="#F2668C" stroke-opacity="0.15" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="640" height="400" fill="url(#basep5)"/>
+  <rect width="640" height="400" fill="url(#hexp5)"/>
+  <circle cx="320.0" cy="184.0" r="144.0" fill="url(#glowp5)"/>
+  <rect x="228.0" y="92.0" width="184" height="184" rx="26" fill="url(#platp5)" stroke="#F2668C" stroke-opacity="0.35" stroke-width="1.5" transform="rotate(45 320.0 184.0)"/>
+  <circle cx="614" cy="26" r="3" fill="#F2668C" fill-opacity="0.65"/>
+  <circle cx="26" cy="26" r="3" fill="#F2668C" fill-opacity="0.65"/>
+  <g transform="translate(320.0,184.0)">
+      <rect x="-56" y="-74" width="112" height="148" rx="18" fill="white" fill-opacity="0.95"/>
+      <circle cx="0" cy="-8" r="30" fill="none" stroke="#F2668C" stroke-width="8"/>
+      <circle cx="0" cy="-8" r="8" fill="#F2668C"/>
+      <line x1="0" y1="-8" x2="20" y2="-8" stroke="#F2668C" stroke-width="6" stroke-linecap="round"/>
+      <rect x="-9" y="38" width="18" height="22" rx="4" fill="#F2668C"/></g>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANTE: reemplaza "https://TU-DOMINIO" por el dominio real una vez desplegado el sitio. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://TU-DOMINIO/index.html</loc><priority>1.0</priority></url>
+  <url><loc>https://TU-DOMINIO/productos.html</loc><priority>0.9</priority></url>
+  <url><loc>https://TU-DOMINIO/categorias.html</loc><priority>0.8</priority></url>
+  <url><loc>https://TU-DOMINIO/producto.html</loc><priority>0.7</priority></url>
+  <url><loc>https://TU-DOMINIO/comparar.html</loc><priority>0.6</priority></url>
+  <url><loc>https://TU-DOMINIO/vender.html</loc><priority>0.7</priority></url>
+  <url><loc>https://TU-DOMINIO/login.html</loc><priority>0.4</priority></url>
+  <url><loc>https://TU-DOMINIO/registro.html</loc><priority>0.4</priority></url>
+  <url><loc>https://TU-DOMINIO/carrito.html</loc><priority>0.3</priority></url>
+  <url><loc>https://TU-DOMINIO/biblioteca.html</loc><priority>0.3</priority></url>
+  <url><loc>https://TU-DOMINIO/dashboard.html</loc><priority>0.3</priority></url>
+  <url><loc>https://TU-DOMINIO/factura.html</loc><priority>0.2</priority></url>
+</urlset>

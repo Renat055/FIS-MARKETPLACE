@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B0F1A"/>
+      <stop offset="100%" stop-color="#121A2B"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#17A896"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="15%" cy="10%" r="50%">
+      <stop offset="0%" stop-color="#17A896" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#17A896" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="95%" cy="15%" r="55%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow1)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+  <rect x="90" y="86" width="96" height="96" rx="22" fill="url(#g2)"/>
+  <text x="138" y="152" font-family="Arial, sans-serif" font-size="46" font-weight="800" fill="#0B0F1A" text-anchor="middle">FS</text>
+  <text x="90" y="330" font-family="Arial, sans-serif" font-size="68" font-weight="800" fill="#ffffff">EPN · FIS</text>
+  <text x="90" y="400" font-family="Arial, sans-serif" font-size="34" font-weight="500" fill="#AEB6C7">Marketplace de software estudiantil</text>
+  <text x="90" y="450" font-family="Arial, sans-serif" font-size="26" font-weight="400" fill="#8891A0">Facultad de Ingeniería de Sistemas · EPN</text>
+</svg>
